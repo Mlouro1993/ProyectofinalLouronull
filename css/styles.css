@@ -18,28 +18,17 @@
     justify-content: space-between;
 }
 
-
-.navbar{
+.certificado{
+    color: black;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-weight: bolder;
-    font-size: 20px;
+    justify-content: center;
+    font-size: 10px;
 }
 
 
-a:hover{
-    color: turquoise;
-}
 
 .logo_ceviche{
     width: 200px;
-}
-
-.nav{
-    display: block;
 }
 
 
@@ -51,7 +40,9 @@ a{
     font-family:'Montserrat', sans-serif;
 }
 
-
+.evento{
+    width: 50px;
+}
 
 h1{
     color: black;
@@ -61,6 +52,7 @@ h1{
     font-family:'Roboto', sans-serif;
     font-size: 30px;
     font-weight: bolder;
+    font-size: 30px;
 
 }
 
@@ -82,13 +74,9 @@ p{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     justify-content: center;
-    font-size: 20px;
-
+    font-size: 45px;
 }
 
-.descripcion{
-    font-size: 25px;
-}
 body{
     background-color: white;
     background-size: cover;
@@ -99,7 +87,7 @@ body{
 .container {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-    display: block;
+    display: flex;
     border-radius: 50px;
     
 }
@@ -180,6 +168,8 @@ label{
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
+    width: 250px;
+    margin-left: 550px;
 }
 
 footer{
@@ -214,7 +204,8 @@ footer a {
 
 .equipo{
     padding: 10px;
-    border-radius: 150px;
+    border-radius: 15px;
+    width: 300px;
 }
 
 
@@ -236,13 +227,14 @@ footer a {
 }
 
 .menu{
-    width: 550px;
+    width: 400px;
     margin-top: 50px;
 }
 
 .mapa{
     margin-top: 100px;
     margin-right: 500px;
+    width: 350px;
 }
 
 h2{
@@ -278,13 +270,23 @@ h2{
     width: 800px;
 }
 .tequeños{
-    width: 750px;
+    width: 450px;
 }
 .descripcion{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 15px;
 }
 
+.img-fluid{
+    width: 55%;
+    height: auto;
+}
+
+.evento{
+    width: 15px;
+    text-align: center;
+    justify-content: center;
+}
 
 /*=======grids====== */
 
@@ -304,7 +306,7 @@ h2{
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
     background-size: cover; 
-    max-width: 600px;
+    max-width: 400px;
 }
 
 .grid-item:hover{
@@ -313,27 +315,23 @@ h2{
 }
 
 /*pantallas medianas*/
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1000px) {
     body{
         color: rgb(1, 14, 14);
+    }
+    p{
+        font-size: 10px;
+    }
+    .navbar-brand{
+        font-size: 10px;
     }
     .parrafo_index{
         padding: 15px;
         text-align: center;
         font-size: 19px;
     }
-    .navbar{
-        display: inline;
-        justify-content: center;
-        position: relative;
-        background-color: turquoise;
-        color: black;
-        align-content: stretch;
-        align-items: stretch;
-    }
-    } 
     .descripcion{
-        font-size: 25px;
+        font-size: 15px;
         text-align: center;
         color: black;
         font-weight: bold;
@@ -348,13 +346,33 @@ h2{
     .social{
         justify-content: center;
         align-items: center;
+        text-align: center;
         
     }
-    
+    .form{
+        margin-left: 85px;
+        margin-right: 104px;
+        font-size: 50px;
+    }
+    .index_lema{
+        font-size: 15px;
+        position: relative;
+    }
+    .grid-item{
+        width: 150px;
+    }
+    .certificado{
+        align-items: center;
+        text-align: center;
+    }
 
+}
+
+
+    
 /*pantallas pequeñas*/
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     body{
         color: aliceblue;
     }
@@ -363,17 +381,26 @@ h2{
         text-align: center;
         font-size: 19px;
     }
-    .navbar{
-        display: inline;
-        justify-content: center;
-        position: relative;
-        background-color: turquoise;
-        color: black;
-        align-content: stretch;
-        align-items: stretch;
+    p{
+        font-size: 10px;
+    }
+    .tequeños{
+        width: 150px;
+    }
+    .texto{
+        width: 50px;
+    }
+    .mapa{
+        width: 250px;
+    }
+    .menu{
+        width: 250px;
+    }
+    .restaurant{
+        width: 300px;
     }
     .descripcion{
-        font-size: 25px;
+        font-size: 15px;
         text-align: center;
         color: black;
         font-weight: bold;
@@ -385,27 +412,43 @@ h2{
         color: firebrick;
         font-size: 20px;
     }
-
-    .social{
-        justify-content: center;
-        align-items: center;
-        
+    .index_lema{
+        font-size: 15px;
+        position: relative;
     }
-
+    .grid-item{
+        width: 150px;
+    }
+    .certificado{
+        align-items: center;
+        text-align: center;
+    }
+    .form{
+        margin-left: 85px;
+        margin-right: 104px;
+        font-size: 50px;
+    }
 }
+
 /*pantallas muy peque*/
-@media only screen and ( max-width: 320px) {
+@media ( max-width: 320px) {
     body{
         color:black ;
     }
-    .navbar{
-        display: inline;
-        justify-content: center;
-        position: relative;
-        background-color: turquoise;
-        color: black;
-        align-content: stretch;
-        align-items: stretch;
+    p{
+        font-size: 10px;
+    }
+    .tequeños{
+        width: 150px;
+    }
+    .texto{
+        width: 50px;
+    }
+    .mapa{
+        width: 250px;
+    }
+    .menu{
+        width: 250px;
     }
     .parrafo_index{
         padding: 15px;
@@ -413,8 +456,12 @@ h2{
         font-size: 19px;
         font-weight: bold;
     }
+    .index_lema{
+        font-size: 15px;
+        position: relative;
+    }
     .descripcion{
-        font-size: 25px;
+        font-size: 15px;
         text-align: center;
         color: black;
         font-weight: bold;
@@ -426,9 +473,25 @@ h2{
         color: firebrick;
         font-size: 20px;
     }
-    .social{
-        justify-content: center;
+    .grid-item{
+        width: 150px;
+    }
+    .restaurant{
+        width: 250px;
+    }
+    .comida{
+        width: 250px;
+        margin-right: 1000px;
+    }
+    .certificado{
         align-items: center;
-        
+        text-align: center;
+    }
+    .social{
+        width: 10px;
+    }
+    .navbar-brand{
+        font-size: 10px;
+        display: flex;
     }
 }
