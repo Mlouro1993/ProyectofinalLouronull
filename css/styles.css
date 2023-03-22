@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,400;0,500;1,400;1,600 & display=swap');
+
+
+.turquoise{
+    background-color: turquoise;
+}
+
+*{
+    padding: 0%;
+    margin: 1%;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+}
+
+.li{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+a:hover{
+    color: turquoise;
+}
+
+.logo_ceviche{
+    width: 200px;
+}
+
+.nav{
+    display: block;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+
+h1{
+    color: black;
+    padding: 40px;
+    margin: 18px 20px 18px 20px; 
+    font-family:cursive;
+    font-family:'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.index_lema{
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+
+div{
+    margin-top: 55px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+    margin-left: 55px;
+}
+
+p{
+    color: black;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+.descripcion{
+    font-size: 25px;
+}
+body{
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    display: block;
+    border-radius: 50px;
+    
+}
+
+.form {
+    padding: 20px 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h3{
+    font-size: 45px;
+    color: rgba(0, 105, 128, 0.9); 
+    font-weight: bolder;
+    margin-bottom: 40px;
+    
+}
+
+.form p {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+    text-align:center
+}
+
+label{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.box{
+    border: 0.5;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.submit {
+    background-color: rgba(0, 105, 128, 0.9) ;
+    border: 0;
+    padding: 15px;
+    color: white; 
+    font-size: 16px;
+    border-radius: 50px;
+    width: 250px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
+    
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+
+.reset{
+    background-color: black;
+    border: 0;
+    padding: 15px;
+    color: white;
+    font-size: 17px;
+    border-radius: 50px;
+    width: 250px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
+}
+.reset:hover{
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+footer{
+    display: flex;
+    height: 10px;
+    margin-top: 25px;
+    justify-content: left;
+    margin-top: 25px;
+    flex-direction:row;
+    align-items: center;
+    padding: 80px;
+    background-color: turquoise;
+}
+
+
+footer img{
+    width: 55px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-inline-end: auto;
+    
+}
+
+
+.equipo{
+    padding: 10px;
+    border-radius: 150px;
+}
+
+
+.restaurant{
+    width: 600px;
+    border: double;
+    border-radius: 15%;
+    font-size: medium;
+
+}
+
+
+.comida{
+    width: 450px;
+    border: double;
+    border-radius: 15%;
+    font-size: medium;
+
+}
+
+.menu{
+    width: 550px;
+    margin-top: 50px;
+}
+
+.mapa{
+    margin-top: 100px;
+    margin-right: 500px;
+}
+
+h2{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.h3{
+    font-family:'Montserrat', sans-serif;
+    font-size: 250px;
+}
+
+.ceviche{
+    width: 400px;
+}
+
+.lomo{
+    width: 400px;
+}
+.postre{
+    width: 250px;
+}
+.pulpo{
+    width: 250px;
+}
+.mesa{
+    width: 250px;
+}
+.reserva{
+    width: 800px;
+}
+.tequeños{
+    width: 750px;
+}
+.descripcion{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/*=======grids====== */
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    background-size: cover; 
+    max-width: 600px;
+}
+
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+/*pantallas medianas*/
+@media only screen and (max-width: 1200px) {
+    body{
+        color: rgb(1, 14, 14);
+    }
+    .parrafo_index{
+        padding: 15px;
+        text-align: center;
+        font-size: 19px;
+    }
+    .navbar{
+        display: inline;
+        justify-content: center;
+        position: relative;
+        background-color: turquoise;
+        color: black;
+        align-content: stretch;
+        align-items: stretch;
+    }
+    } 
+    .descripcion{
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .parrafo_menu{
+        font-weight: bold;
+        font-style: initial;
+        color: firebrick;
+        font-size: 20px;
+    }
+    .social{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+
+/*pantallas pequeñas*/
+
+@media only screen and (max-width: 600px) {
+    body{
+        color: aliceblue;
+    }
+    .parrafo_index{
+        padding: 15px;
+        text-align: center;
+        font-size: 19px;
+    }
+    .navbar{
+        display: inline;
+        justify-content: center;
+        position: relative;
+        background-color: turquoise;
+        color: black;
+        align-content: stretch;
+        align-items: stretch;
+    }
+    .descripcion{
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .parrafo_menu{
+        font-weight: bold;
+        font-style: initial;
+        color: firebrick;
+        font-size: 20px;
+    }
+
+    .social{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}
+/*pantallas muy peque*/
+@media only screen and ( max-width: 320px) {
+    body{
+        color:black ;
+    }
+    .navbar{
+        display: inline;
+        justify-content: center;
+        position: relative;
+        background-color: turquoise;
+        color: black;
+        align-content: stretch;
+        align-items: stretch;
+    }
+    .parrafo_index{
+        padding: 15px;
+        text-align: center;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .descripcion{
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .parrafo_menu{
+        font-weight: bold;
+        font-style: initial;
+        color: firebrick;
+        font-size: 20px;
+    }
+    .social{
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
