@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,400;0,500;1,400;1,600 & display=swap');
-
-
+@import "../sass/variableGlobal";
+@import "../sass/generales";
+@import "../sass/parrafo";
+@import "../sass/titulo";
 .turquoise{
-    background-color: turquoise;
-}
-
-*{
-    padding: 0%;
-    margin: 1%;
-    box-sizing: border-box;
-    font-family:'Poppins', sans-serif;
-    text-align: center;
+    background-color: turquoise; 
 }
 
 .li{
@@ -25,13 +18,9 @@
     font-size: 10px;
 }
 
-
-
 .logo_ceviche{
     width: 200px;
 }
-
-
 
 a{
     text-decoration: none;
@@ -44,23 +33,6 @@ a{
     width: 50px;
 }
 
-h1{
-    color: black;
-    padding: 40px;
-    margin: 18px 20px 18px 20px; 
-    font-family:cursive;
-    font-family:'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-    font-size: 30px;
-
-}
-
-.index_lema{
-    font-size: 40px;
-    font-weight: bolder;
-
-}
 
 div{
     margin-top: 55px;
@@ -69,27 +41,15 @@ div{
     margin-left: 55px;
 }
 
-p{
-    color: black;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    justify-content: center;
-    font-size: 45px;
-}
-
-body{
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.parrafo_index{
+    color: brown;
 }
 
 .container {
-    background-color: rgb(255, 255, 255);
+    color: black;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
     display: flex;
-    border-radius: 50px;
-    
+    position: sticky;
 }
 
 .form {
@@ -99,12 +59,11 @@ body{
     flex-direction: column;
 }
 
-.form h3{
+.form h3 {
     font-size: 45px;
-    color: rgba(0, 105, 128, 0.9); 
+    color: rgba(0, 105, 128, 0.9);
     font-weight: bolder;
     margin-bottom: 40px;
-    
 }
 
 .form p {
@@ -112,18 +71,19 @@ body{
     color: black;
     margin-bottom: 20px;
     word-spacing: 5px;
-    text-align:center
+    text-align: center;
+    font-weight: bolder;
 }
 
-label{
+label {
     font-size: 20px;
     color: black;
     margin-bottom: 15px;
 }
 
-.box{
+.box {
     border: 0.5;
-    background-color: white;
+    color: black;
     padding: 5px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -131,70 +91,77 @@ label{
 }
 
 .submit {
-    background-color: rgba(0, 105, 128, 0.9) ;
+    color: rgba(0, 105, 128, 0.9);
     border: 0;
     padding: 15px;
-    color: white; 
+    color: black;
     font-size: 16px;
     border-radius: 50px;
     width: 250px;
     margin-top: 25px;
     box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
-    
 }
 
-.submit:hover{
-    cursor: pointer;
+input:valid{
+    border-color: turquoise;
+    animation: none;
 }
 
-
-.reset{
-    background-color: black;
+.reset {
+    color: black;
     border: 0;
     padding: 15px;
-    color: white;
+    color:black;
     font-size: 17px;
     border-radius: 50px;
     width: 250px;
     margin-top: 25px;
     box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
 }
-.reset:hover{
+
+.reset:hover {
     cursor: pointer;
 }
 
-.social{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    width: 250px;
-    margin-left: 550px;
+.animated-text{
+    font-size: 2rem;
+    background: linear-gradient(90deg,red,yellow,turquoise) 0 0 / 400% 100%;
+    animation: move-bg 4s infinite linear;
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
-footer{
+@keyframes move-bg {
+    to{
+        background-position: 400% 0;
+    }
+}
+
+.social {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+footer {
     display: flex;
     height: 10px;
     margin-top: 25px;
     justify-content: left;
     margin-top: 25px;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     padding: 80px;
-    background-color: turquoise;
+    color: turquoise;
 }
 
-
-footer img{
-    width: 55px;
-    margin: auto;
-    border-radius: 10px;
-    
+footer img {
+    width: 3rem;
 }
 
 footer a {
-    display: flex;
-    justify-content: center;
     align-items: center;
     margin-right: 100px;
     margin-inline-end: auto;
@@ -230,7 +197,12 @@ footer a {
     width: 400px;
     margin-top: 50px;
 }
-
+h1{
+    background-image: linear-gradient(turquoise, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .mapa{
     margin-top: 100px;
     margin-right: 500px;
@@ -369,6 +341,17 @@ h2{
 }
 
 
+/*mixin*/
+@mixin sizes($widht, $height) {
+    height: $height;
+    width: $width;
+}
+.content_titulo{
+    @include sizes(500px, 50px);
+    background-color: burlywood;
+}
+
+
     
 /*pantallas pequeñas*/
 
@@ -490,8 +473,7 @@ h2{
     .social{
         width: 10px;
     }
-    .navbar-brand{
+    .container{
         font-size: 10px;
-        display: flex;
     }
 }
