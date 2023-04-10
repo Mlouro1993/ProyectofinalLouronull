@@ -1,0 +1,10 @@
+
+//*mixin*/
+@mixin sizes($widht, $height) {
+    height: $height;
+    width: $width;
+}
+.content_titulo{
+    @include sizes(500px, 50px);
+    background-color: burlywood;
+}

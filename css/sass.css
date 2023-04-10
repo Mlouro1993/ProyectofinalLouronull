@@ -1,7 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,400;0,500;1,400;1,600 & display=swap");
-.body {
-  background-color: white;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
 }
 
 h1 {
@@ -55,6 +61,55 @@ body {
   font-size: 1.5rem;
 }
 
+.grid-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  max-width: 400px;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.gallery img {
+  width: 60%;
+  border-radius: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.gallery1 {
+  width: 2rem;
+  align-self: stretch;
+}
+
+.gallery2 {
+  width: 2rem;
+  align-self: stretch;
+  align-content: center;
+  grid-column: 3/4;
+}
+
 .turquoise {
   background-color: turquoise;
 }
@@ -101,24 +156,25 @@ div {
   color: black;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
   display: flex;
-  position: sticky;
+  justify-content: center;
+  align-items: center;
 }
-
-.form {
-  padding: 20px 50px;
-  width: 50%;
+.container .form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 100px 12em;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-
-.form h3 {
+.container .form h3 {
   font-size: 45px;
   color: rgba(0, 105, 128, 0.9);
   font-weight: bolder;
   margin-bottom: 40px;
 }
-
-.form p {
+.container .form p {
   font-size: 25px;
   color: black;
   margin-bottom: 20px;
@@ -126,17 +182,25 @@ div {
   text-align: center;
   font-weight: bolder;
 }
-
-label {
+.container .form label {
   font-size: 20px;
   color: black;
   margin-bottom: 15px;
+}
+.container .form input {
+  width: 100%;
+  margin: 0px 1em;
+  height: 3em;
+}
+.container .form textarea {
+  width: 100%;
+  margin: 0px 1em;
+  height: 8em;
 }
 
 .box {
   border: 0.5;
   color: black;
-  padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
   outline: none;
@@ -145,11 +209,9 @@ label {
 .submit {
   color: rgba(0, 105, 128, 0.9);
   border: 0;
-  padding: 15px;
   color: black;
   font-size: 16px;
   border-radius: 50px;
-  width: 250px;
   margin-top: 25px;
   box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
 }
@@ -162,11 +224,9 @@ input:valid {
 .reset {
   color: black;
   border: 0;
-  padding: 15px;
   color: black;
   font-size: 17px;
   border-radius: 50px;
-  width: 250px;
   margin-top: 25px;
   box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
 }
@@ -239,11 +299,6 @@ footer a {
   font-size: medium;
 }
 
-.menu {
-  width: 400px;
-  margin-top: 50px;
-}
-
 h1 {
   background-image: linear-gradient(turquoise, black);
   background-clip: text;
@@ -252,8 +307,6 @@ h1 {
 }
 
 .mapa {
-  margin-top: 100px;
-  margin-right: 500px;
   width: 350px;
 }
 
@@ -286,19 +339,7 @@ h2 {
   width: 250px;
 }
 
-.pulpo {
-  width: 250px;
-}
-
-.mesa {
-  width: 250px;
-}
-
 .reserva {
-  width: 800px;
-}
-
-.tequeños {
   width: 450px;
 }
 
@@ -318,30 +359,6 @@ h2 {
   justify-content: center;
 }
 
-/*=======grids====== */
-.grid-container {
-  display: grid;
-  gap: 20px;
-  padding: 20px;
-  justify-items: center;
-  justify-content: center;
-}
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  transition: transform 0.3s ease-in-out;
-  background-size: cover;
-  max-width: 400px;
-}
-
-.grid-item:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04);
-}
-
 /*pantallas medianas*/
 @media (max-width: 1000px) {
   body {
@@ -352,6 +369,58 @@ h2 {
   }
   .navbar-brand {
     font-size: 10px;
+  }
+  .container {
+    color: black;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 20px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .container .form h3 {
+    font-size: 45px;
+    color: rgba(0, 105, 128, 0.9);
+    font-weight: bolder;
+    margin-bottom: 40px;
+  }
+  .container .form p {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .container .form label {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+  }
+  .container .form input {
+    width: 100%;
+    margin: 0px 1em;
+    height: 3em;
+  }
+  .container .form textarea {
+    width: 100%;
+    margin: 0px 1em;
+    height: 5em;
+  }
+  .container .form .boton {
+    height: 40px;
+    font-size: 20px;
+    background: blue;
+    color: white;
   }
   .parrafo_index {
     padding: 15px;
@@ -376,11 +445,6 @@ h2 {
     align-items: center;
     text-align: center;
   }
-  .form {
-    margin-left: 85px;
-    margin-right: 104px;
-    font-size: 50px;
-  }
   .index_lema {
     font-size: 15px;
     position: relative;
@@ -393,7 +457,6 @@ h2 {
     text-align: center;
   }
 }
-/*mixin*/
 /*pantallas pequeñas*/
 @media (max-width: 600px) {
   body {
@@ -404,11 +467,67 @@ h2 {
     text-align: center;
     font-size: 19px;
   }
-  p {
-    font-size: 10px;
+  .container {
+    color: black;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .tequeños {
-    width: 150px;
+  .container .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 20px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .container .form h3 {
+    font-size: 45px;
+    color: rgba(0, 105, 128, 0.9);
+    font-weight: bolder;
+    margin-bottom: 40px;
+  }
+  .container .form p {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .container .form label {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+  }
+  .container .form input {
+    width: 100%;
+    margin: 0px 1em;
+    height: 3em;
+  }
+  .container .form textarea {
+    width: 100%;
+    margin: 0px 1em;
+    height: 5em;
+  }
+  .container .form .boton {
+    height: 40px;
+    font-size: 20px;
+    background: blue;
+    color: white;
+  }
+  div {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+    color: black;
+  }
+  h2 {
+    color: black;
   }
   .texto {
     width: 50px;
@@ -420,6 +539,9 @@ h2 {
     width: 250px;
   }
   .restaurant {
+    width: 300px;
+  }
+  .comida {
     width: 300px;
   }
   .descripcion {
@@ -446,30 +568,77 @@ h2 {
     align-items: center;
     text-align: center;
   }
-  .form {
-    margin-left: 85px;
-    margin-right: 104px;
-    font-size: 50px;
+  .reserva {
+    width: auto;
   }
 }
 /*pantallas muy peque*/
 @media (max-width: 320px) {
   body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
     color: black;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 20px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .container .form h3 {
+    font-size: 45px;
+    color: rgba(0, 105, 128, 0.9);
+    font-weight: bolder;
+    margin-bottom: 40px;
+  }
+  .container .form p {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .container .form label {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+  }
+  .container .form input {
+    width: 100%;
+    margin: 0px 1em;
+    height: 1em;
+  }
+  .container .form textarea {
+    width: 100%;
+    margin: 0px 1em;
+    height: 5em;
+  }
+  .container .form .boton {
+    height: 40px;
+    font-size: 20px;
+    background: blue;
+    color: white;
   }
   p {
-    font-size: 10px;
-  }
-  .tequeños {
-    width: 150px;
+    font-size: 20px;
   }
   .texto {
     width: 50px;
   }
   .mapa {
-    width: 250px;
-  }
-  .menu {
     width: 250px;
   }
   .parrafo_index {
@@ -514,5 +683,11 @@ h2 {
   }
   .container {
     font-size: 10px;
+  }
+  .box {
+    align-items: center;
+  }
+  .form h3 {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=sass.css.map */

@@ -4,10 +4,15 @@ $parrafo: black;
 
 
 
-.body{
-    background-color: $color;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+body{
+    background: white;
+}
 h1{
     color: $color;
     padding: 15px;

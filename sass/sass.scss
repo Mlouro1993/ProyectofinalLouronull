@@ -1,7 +1,8 @@
-@import "../sass/variableGlobal";
+@import "../sass/variables";
 @import "../sass/generales";
 @import "../sass/parrafo";
 @import "../sass/titulo";
+@import "../sass/grid";
 .turquoise{
     background-color: turquoise; 
 }
@@ -49,42 +50,54 @@ div{
     color: black;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
     display: flex;
-    position: sticky;
+    justify-content: center;
+    align-items: center;
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 100px 12em;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        h3 {
+            font-size: 45px;
+            color: rgba(0, 105, 128, 0.9);
+            font-weight: bolder;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 25px;
+            color: black;
+            margin-bottom: 20px;
+            word-spacing: 5px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        
+        label {
+            font-size: 20px;
+            color: black;
+            margin-bottom: 15px;
+        }
+        input{
+            width: 100%;
+            margin: 0px 1em;
+            height: 3em;
+        }
+        textarea{
+            width: 100%;
+            margin: 0px 1em;
+            height: 8em;
+        }
+    }
 }
 
-.form {
-    padding: 20px 50px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
 
-.form h3 {
-    font-size: 45px;
-    color: rgba(0, 105, 128, 0.9);
-    font-weight: bolder;
-    margin-bottom: 40px;
-}
-
-.form p {
-    font-size: 25px;
-    color: black;
-    margin-bottom: 20px;
-    word-spacing: 5px;
-    text-align: center;
-    font-weight: bolder;
-}
-
-label {
-    font-size: 20px;
-    color: black;
-    margin-bottom: 15px;
-}
 
 .box {
     border: 0.5;
     color: black;
-    padding: 5px;
     border-radius: 10px;
     margin-bottom: 10px;
     outline: none;
@@ -93,11 +106,9 @@ label {
 .submit {
     color: rgba(0, 105, 128, 0.9);
     border: 0;
-    padding: 15px;
     color: black;
     font-size: 16px;
     border-radius: 50px;
-    width: 250px;
     margin-top: 25px;
     box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
 }
@@ -110,11 +121,9 @@ input:valid{
 .reset {
     color: black;
     border: 0;
-    padding: 15px;
     color:black;
     font-size: 17px;
     border-radius: 50px;
-    width: 250px;
     margin-top: 25px;
     box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
 }
@@ -193,10 +202,7 @@ footer a {
 
 }
 
-.menu{
-    width: 400px;
-    margin-top: 50px;
-}
+
 h1{
     background-image: linear-gradient(turquoise, black);
     background-clip: text;
@@ -204,8 +210,6 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 .mapa{
-    margin-top: 100px;
-    margin-right: 500px;
     width: 350px;
 }
 
@@ -232,18 +236,11 @@ h2{
 .postre{
     width: 250px;
 }
-.pulpo{
-    width: 250px;
-}
-.mesa{
-    width: 250px;
-}
+
 .reserva{
-    width: 800px;
-}
-.tequeños{
     width: 450px;
 }
+
 .descripcion{
     font-weight: bold;
     font-size: 15px;
@@ -260,31 +257,7 @@ h2{
     justify-content: center;
 }
 
-/*=======grids====== */
 
-.grid-container{
-    display: grid;
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-    justify-content: center;
-
-}
-
-.grid-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-    background-size: cover; 
-    max-width: 400px;
-}
-
-.grid-item:hover{
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
 
 /*pantallas medianas*/
 @media (max-width: 1000px) {
@@ -296,6 +269,59 @@ h2{
     }
     .navbar-brand{
         font-size: 10px;
+    }
+    .container {
+        color: black;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 80px 20px;
+            margin: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h3 {
+                font-size: 45px;
+                color: rgba(0, 105, 128, 0.9);
+                font-weight: bolder;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 25px;
+                color: black;
+                margin-bottom: 20px;
+                word-spacing: 5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+            
+            label {
+                font-size: 20px;
+                color: black;
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                margin: 0px 1em;
+                height: 3em;
+            }
+            textarea{
+                width: 100%;
+                margin: 0px 1em;
+                height: 5em;
+            }
+            .boton{
+                height: 40px;
+                font-size: 20px;
+                background: blue;
+                color: white;
+            }
+        }
     }
     .parrafo_index{
         padding: 15px;
@@ -321,11 +347,6 @@ h2{
         text-align: center;
         
     }
-    .form{
-        margin-left: 85px;
-        margin-right: 104px;
-        font-size: 50px;
-    }
     .index_lema{
         font-size: 15px;
         position: relative;
@@ -341,18 +362,6 @@ h2{
 }
 
 
-/*mixin*/
-@mixin sizes($widht, $height) {
-    height: $height;
-    width: $width;
-}
-.content_titulo{
-    @include sizes(500px, 50px);
-    background-color: burlywood;
-}
-
-
-    
 /*pantallas pequeñas*/
 
 @media (max-width: 600px) {
@@ -364,11 +373,68 @@ h2{
         text-align: center;
         font-size: 19px;
     }
-    p{
-        font-size: 10px;
+    .container {
+        color: black;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 80px 20px;
+            margin: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h3 {
+                font-size: 45px;
+                color: rgba(0, 105, 128, 0.9);
+                font-weight: bolder;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 25px;
+                color: black;
+                margin-bottom: 20px;
+                word-spacing: 5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+            
+            label {
+                font-size: 20px;
+                color: black;
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                margin: 0px 1em;
+                height: 3em;
+            }
+            textarea{
+                width: 100%;
+                margin: 0px 1em;
+                height: 5em;
+            }
+            .boton{
+                height: 40px;
+                font-size: 20px;
+                background: blue;
+                color: white;
+            }
+        }
     }
-    .tequeños{
-        width: 150px;
+    div{
+        font-size: 15px;
+    }
+    p{
+        font-size: 14px;
+        color: black;
+    }
+    h2{
+        color: black;
     }
     .texto{
         width: 50px;
@@ -380,6 +446,9 @@ h2{
         width: 250px;
     }
     .restaurant{
+        width: 300px;
+    }
+    .comida{
         width: 300px;
     }
     .descripcion{
@@ -406,31 +475,79 @@ h2{
         align-items: center;
         text-align: center;
     }
-    .form{
-        margin-left: 85px;
-        margin-right: 104px;
-        font-size: 50px;
+    .reserva{
+        width: auto;
     }
 }
 
 /*pantallas muy peque*/
 @media ( max-width: 320px) {
     body{
-        color:black ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        color: black;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 80px 20px;
+            margin: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h3 {
+                font-size: 45px;
+                color: rgba(0, 105, 128, 0.9);
+                font-weight: bolder;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 25px;
+                color: black;
+                margin-bottom: 20px;
+                word-spacing: 5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+            
+            label {
+                font-size: 20px;
+                color: black;
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                margin: 0px 1em;
+                height: 1em;
+            }
+            textarea{
+                width: 100%;
+                margin: 0px 1em;
+                height: 5em;
+            }
+            .boton{
+                height: 40px;
+                font-size: 20px;
+                background: blue;
+                color: white;
+            }
+        }
     }
     p{
-        font-size: 10px;
-    }
-    .tequeños{
-        width: 150px;
+        font-size: 20px;
     }
     .texto{
         width: 50px;
     }
     .mapa{
-        width: 250px;
-    }
-    .menu{
         width: 250px;
     }
     .parrafo_index{
@@ -475,5 +592,14 @@ h2{
     }
     .container{
         font-size: 10px;
+    }
+    .box{
+        align-items: center;
+    }
+    .form h3 {
+        font-size: 25px;
+    }
+    .comentarios{
+
     }
 }
