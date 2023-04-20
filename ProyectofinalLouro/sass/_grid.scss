@@ -1,0 +1,68 @@
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    background-size: cover; 
+    max-width: 400px;
+}
+
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.gallery{
+    display: grid;
+}
+
+.gallery img {
+    border-radius: 15px;
+    height: fit-content;
+    object-fit: contain;
+}
+.gallery1{
+    align-self: stretch;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+.gallery2{
+    align-self: stretch;
+    align-content: center;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+.gallery3{
+    align-self: stretch;
+    align-content: center;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+.gallery4{
+    align-self: stretch;
+    align-content: center;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+.gallery5{
+    align-self: stretch;
+    align-content: center;
+    width: 350px;
+    display: block;
+    margin: auto;
+}

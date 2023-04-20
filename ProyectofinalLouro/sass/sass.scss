@@ -1,0 +1,595 @@
+@import "../sass/variables";
+@import "../sass/generales";
+@import "../sass/parrafo";
+@import "../sass/titulo";
+@import "../sass/grid";
+.turquoise{
+    background-color: turquoise; 
+}
+
+.li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificado{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.logo_ceviche{
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.evento{
+    width: 50px;
+}
+
+
+div{
+    margin-top: 55px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+    margin-left: 55px;
+}
+
+.parrafo_index{
+    color: brown;
+}
+
+.container {
+    color: black;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 100px 12em;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        h3 {
+            font-size: 45px;
+            color: rgba(0, 105, 128, 0.9);
+            font-weight: bolder;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 25px;
+            color: black;
+            margin-bottom: 20px;
+            word-spacing: 5px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        
+        label {
+            font-size: 20px;
+            color: black;
+            margin-bottom: 15px;
+        }
+        input{
+            width: 100%;
+            margin: 0px 1em;
+            height: 3em;
+        }
+        textarea{
+            width: 100%;
+            margin: 0px 1em;
+            height: 8em;
+        }
+    }
+}
+.box {
+    border: 0.5;
+    color: black    ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.submit {
+    color: rgba(0, 105, 128, 0.9);
+    border: 0;
+    color: black;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
+}
+.reset {
+    color: black;
+    border: 0;
+    color:black;
+    font-size: 17px;
+    border-radius: 50px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 105, 128, 0.9);
+}
+input:valid{
+    border-color: turquoise;
+    animation: none;
+}
+
+
+.reset:hover {
+    cursor: pointer;
+}
+
+.animated-text{
+    font-size: 2rem;
+    background: linear-gradient(90deg,red,yellow,turquoise) 0 0 / 400% 100%;
+    animation: move-bg 4s infinite linear;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+@keyframes move-bg {
+    to{
+        background-position: 400% 0;
+    }
+}
+
+.social {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    height: 10px;
+    margin-top: 25px;
+    justify-content: left;
+    margin-top: 25px;
+    flex-direction: row;
+    align-items: center;
+    padding: 80px;
+    color: turquoise;
+}
+
+footer img {
+    width: 3rem;
+}
+
+footer a {
+    align-items: center;
+    margin-right: 100px;
+    margin-inline-end: auto;
+    
+}
+
+
+.equipo{
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+
+.restaurant{
+    width: 400px;
+    border: double;
+    border-radius: 15%;
+    font-size: medium;
+
+}
+
+
+.comida{
+    width: 400px;
+    border: double;
+    border-radius: 15%;
+    font-size: medium;
+
+}
+
+
+h1{
+    background-image: linear-gradient(turquoise, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mapa{
+    width: 350px;
+}
+
+h2{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.h3{
+    font-size: 250px;
+}
+
+.ceviche{
+    width: 400px;
+}
+
+.lomo{
+    width: 400px;
+}
+.postre{
+    width: 250px;
+}
+
+.reserva{
+    width: 450px;
+}
+
+.descripcion{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.img-fluid{
+    width: 55%;
+    height: auto;
+}
+
+.evento{
+    width: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/*pantallas medianas*/
+@media (max-width: 1000px) {
+    body{
+        color: rgb(1, 14, 14);
+    }
+    p{
+        font-size: 10px;
+    }
+    .navbar-brand{
+        font-size: 10px;
+    }
+    .container {
+        color: black;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 80px 20px;
+            margin: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h3 {
+                font-size: 45px;
+                color: rgba(0, 105, 128, 0.9);
+                font-weight: bolder;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 25px;
+                color: black;
+                margin-bottom: 20px;
+                word-spacing: 5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+            
+            label {
+                font-size: 20px;
+                color: black;
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                margin: 0px 1em;
+                height: 3em;
+            }
+            textarea{
+                width: 100%;
+                margin: 0px 1em;
+                height: 5em;
+            }
+            .boton{
+                height: 40px;
+                font-size: 20px;
+                background: blue;
+                color: white;
+            }
+        }
+    }
+    .parrafo_index{
+        padding: 15px;
+        text-align: center;
+        font-size: 19px;
+    }
+    .descripcion{
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .parrafo_menu{
+        font-weight: bold;
+        font-style: initial;
+        color: firebrick;
+        font-size: 20px;
+    }
+    .social{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .index_lema{
+        font-size: 15px;
+        position: relative;
+    }
+    .grid-item{
+        width: 150px;
+    }
+    .certificado{
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+/*pantallas pequeñas*/
+
+@media (max-width: 600px) {
+    body{
+        color: aliceblue;
+    }
+    .parrafo_index{
+        padding: 15px;
+        text-align: center;
+        font-size: 19px;
+    }
+    .container {
+        color: black;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 80px 20px;
+            margin: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h3 {
+                font-size: 45px;
+                color: rgba(0, 105, 128, 0.9);
+                font-weight: bolder;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 25px;
+                color: black;
+                margin-bottom: 20px;
+                word-spacing: 5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+            
+            label {
+                font-size: 20px;
+                color: black;
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                margin: 0px 1em;
+                height: 3em;
+            }
+            textarea{
+                width: 100%;
+                margin: 0px 1em;
+                height: 5em;
+            }
+            .boton{
+                height: 40px;
+                font-size: 20px;
+                background: blue;
+                color: white;
+            }
+        }
+    }
+    div{
+        font-size: 15px;
+    }
+    p{
+        font-size: 14px;
+        color: black;
+    }
+    h2{
+        color: black;
+    }
+    .texto{
+        width: 50px;
+    }
+    .mapa{
+        width: 80%;
+    }
+    .menu{
+        width: 250px;
+    }
+    .restaurant{
+        width: 80%;
+    }
+    .comida{
+        width: 80%;
+    }
+    .descripcion{
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .parrafo_menu{
+        font-weight: bold;
+        font-style: initial;
+        color: firebrick;
+        font-size: 20px;
+    }
+    .index_lema{
+        font-size: 15px;
+        position: relative;
+    }
+    .grid-item{
+        width: 150px;
+    }
+    .certificado{
+        align-items: center;
+        text-align: center;
+    }
+    .reserva{
+        width: auto;
+    }
+}
+
+/*pantallas muy peque*/
+@media ( max-width: 320px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        color: black;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 80px 20px;
+            margin: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h3 {
+                font-size: 45px;
+                color: rgba(0, 105, 128, 0.9);
+                font-weight: bolder;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 25px;
+                color: black;
+                margin-bottom: 20px;
+                word-spacing: 5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+            
+            label {
+                font-size: 20px;
+                color: black;
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                margin: 0px 1em;
+                height: 2em;
+            }
+            textarea{
+                width: 100%;
+                margin: 0px 1em;
+                height: 5em;
+            }
+            .boton{
+                height: 40px;
+                font-size: 20px;
+                background: blue;
+                color: white;
+            }
+        }
+    }
+    p{
+        font-size: 20px;
+    }
+    .texto{
+        width: 50px;
+    }
+    .mapa{
+        width: 80%;
+    }
+    .parrafo_index{
+        padding: 15px;
+        text-align: center;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .index_lema{
+        font-size: 15px;
+        position: relative;
+    }
+    .descripcion{
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .parrafo_menu{
+        font-weight: bold;
+        font-style: initial;
+        color: firebrick;
+        font-size: 20px;
+    }
+    .grid-item{
+        width: 150px;
+    }
+    .restaurant{
+        width: 250px;
+    }
+    .comida{
+        width: 250px;
+        margin-right: 1000px;
+    }
+    .certificado{
+        align-items: center;
+        text-align: center;
+    }
+    .social{
+        width: 10px;
+    }
+    .container{
+        font-size: 10px;
+    }
+    .box{
+        align-items: center;
+    }
+    .form h3 {
+        font-size: 25px;
+    }
+}
